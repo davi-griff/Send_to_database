@@ -37,4 +37,7 @@ pyvenv.cfg
 .env
 pip-selfcheck.json
 
+/env
+\__pycache__
+
 # End of https://www.toptal.com/developers/gitignore/api/venv,microsoftoffice
