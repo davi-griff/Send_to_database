@@ -54,7 +54,7 @@ class sql():
             tabela = 'leitura_dev'
         elif tabelaenvresp == 4:
             tabela = 'sgip'
-        return tabelaenvresp
+        return tabela
 
     #Here we have our DataFrame.to_sql() function, it will read de DataFrame created from the .xlsx sheet and it will send to the database. 
     #It will also reset the aplication if the process have any problem while sending.
