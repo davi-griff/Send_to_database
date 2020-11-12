@@ -43,6 +43,8 @@ class sql():
         print("3 - LEITURA-DEV")
         print()
         print("4 - SGIP")
+        print()
+        print("5 - LEITURA-DROGAS")
         print("---------------------")
         print(">", end='')
         tabelaenvresp = int(input())
@@ -54,6 +56,8 @@ class sql():
             tabela = 'leitura_dev'
         elif tabelaenvresp == 4:
             tabela = 'sgip'
+        elif tabelaenvresp == 5:
+            tabela = 'leitura_drogas'
         return tabela
 
     #Here we have our DataFrame.to_sql() function, it will read de DataFrame created from the .xlsx sheet and it will send to the database. 
