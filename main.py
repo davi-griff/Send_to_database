@@ -30,7 +30,9 @@ while replay == True:
             replay = True
         else:
             replay = False
-    except:
+    except Exception as e:
+        logf = open("error.log", "w")
+        logf.write("Falha ao Enviar ao Banco {0}\n".format(str(e)))
         replay = False
         print("Houve um erro ao Enviar o Banco, desejatentar novamente? (y/n)")
         replay_app = input()
